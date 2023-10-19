@@ -1,4 +1,4 @@
-const gridContainer = document.getElementById("grid-container");
+const gridContainer = document.querySelector(".grid-container");
 
 for (let i = 0; i < 16; i++) {
     const gridSquare = document.createElement("div");
