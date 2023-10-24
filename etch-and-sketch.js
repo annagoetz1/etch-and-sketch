@@ -1,6 +1,6 @@
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', () => {
-alert("How many squares do you need?");
+prompt("How many squares do you need?");
 });
 
 
