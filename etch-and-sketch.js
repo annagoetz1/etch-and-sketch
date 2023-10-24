@@ -1,4 +1,4 @@
-const userButton = document.querySelector('#btn');
+const btn = document.querySelector('#btn');
 btn.addEventListener('click', () => {
 alert = ("How many squares do you need?");
 });
