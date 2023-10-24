@@ -1,6 +1,6 @@
-const userButton = document.querySelector('a');
+const userButton = document.querySelector('body');
 const userPrompt = document.CreateElement ('#btn');
-BigInt.addEventListener('click', () => {
+btn.addEventListener('click', () => {
 alert = ("How many squares do you need?");
 });
 
