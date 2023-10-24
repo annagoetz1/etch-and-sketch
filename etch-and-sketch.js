@@ -1,3 +1,10 @@
+const userButton = document.querySelector('a');
+const userPrompt = document.CreateElement ('#btn');
+BigInt.addEventListener('click', () => {
+alert = ("How many squares do you need?");
+});
+
+
 const gridContainer = document.querySelector(".grid-container");
 
 for (let j = 0; j <16; j++) {
