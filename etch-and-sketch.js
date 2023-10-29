@@ -6,10 +6,21 @@ btn.addEventListener('click', () => {
     const gridContainer = document.querySelector(".grid-container");
 gridContainer.innerHTML = '';
 
-        if (!isNaN(userInput)) {
-        const numberOfSquares = parseInt (userInput);
-    }
-    createGrid(numberofSquares);
+        if (userInput !== null) {
+            while (true){
+                if (!isNaN(userInput)) {
+                  numberOfSquares = parseInt (userInput);
+                  break;
+                } else {
+                    alert ("Please enter a valid number.");
+                    userInput = prompt ("How many squares do you need?");
+                    if (userInput === null) {
+                        break;
+                    }
+                }
+            } 
+        }
+        createGrid(numberOfSquares, gridContainer);       
     });
 
 function createGrid(numberOfSquares, gridContainer) {
