@@ -1,21 +1,25 @@
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', () => {
-prompt("How many squares do you need?");
-});
+    const userInput = prompt("How many squares do you need?");
+    let numberofSquares = 16;
+        if (!isNaN(userInput)) {
+        const numberOfSquares = parseInt (userInput);
+    }
+    createGrid(numberofSquares);
+    });
 
-
+function createGrid(numberOfSquares) {
 const gridContainer = document.querySelector(".grid-container");
 
-for (let j = 0; j <16; j++) {
+for (let j = 0; j < numberOfSquares; j++) {
     const row = document.createElement("div");
     row.className = "grid-row";
     
 
-
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < numberOfSquares; i++) {
     const gridSquare = document.createElement("div");
     gridSquare.className = "grid-square";
    row.appendChild (gridSquare); }
-
     gridContainer.appendChild(row);
+}
 }
