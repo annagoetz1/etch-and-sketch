@@ -1,15 +1,15 @@
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', () => {
     const userInput = prompt("How many squares do you need?");
-    let numberofSquares = 16;
+    let numberOfSquares = 16;
 
     const gridContainer = document.querySelector(".grid-container");
 gridContainer.innerHTML = '';
 
         if (userInput !== null) {
-            while (true){
+            while (true) {
                 if (!isNaN(userInput)) {
-                  numberOfSquares = parseInt (userInput);
+                  numberOfSquares = parseInt(userInput);
                   break;
                 } else {
                     alert ("Please enter a valid number.");
