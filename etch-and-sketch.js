@@ -37,7 +37,7 @@ for (let i = 0; i < numberOfSquares; i++) {
     gridContainer.appendChild(row);
 }
 }
-function gridHover (){}
+function gridHover (){
 
 const gridSquares = document.querySelectorAll ('.grid-square');
 gridSquares.forEach((square) => {
@@ -47,3 +47,5 @@ square.addEventListener ('mouseover', () => {
 square.addEventListener ('mouseout', () => {
 square.style.backgroundColor = '';
 });
+});
+}
