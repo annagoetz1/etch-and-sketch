@@ -37,10 +37,13 @@ for (let i = 0; i < numberOfSquares; i++) {
     gridContainer.appendChild(row);
 }
 }
-const gridHover = document.querySelectorAll ('div');
-div.addEventListener ('mouseover', () => {
-    div.style.backgroundColor = 'blue';
+function gridHover (){}
+
+const gridSquares = document.querySelectorAll ('.grid-square');
+gridSquares.forEach((square) => {
+square.addEventListener ('mouseover', () => {
+    square.style.backgroundColor = 'blue';
 });
-div.addEventListener ('mouseout', () => {
-div.style.backgroundColor = '';
+square.addEventListener ('mouseout', () => {
+square.style.backgroundColor = '';
 });
