@@ -20,7 +20,8 @@ gridContainer.innerHTML = '';
                 }
             } 
         }
-        createGrid(numberOfSquares, gridContainer);       
+        createGrid(numberOfSquares, gridContainer);    
+        gridHover ();   
     });
 
 function createGrid(numberOfSquares, gridContainer) {
