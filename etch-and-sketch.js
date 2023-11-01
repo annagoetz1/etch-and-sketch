@@ -43,10 +43,18 @@ function gridHover (){
 const gridSquares = document.querySelectorAll ('.grid-square');
 gridSquares.forEach((square) => {
 square.addEventListener ('mouseover', () => {
-    square.style.backgroundColor = 'blue';
+
+    let randomRed = Math.floor (Math.random() * 256);
+    let randomGreen =Math.floor (Math.random() * 256);
+    let randomBlue = Math.floor (Math.random() * 256);
+randomColor = rgb({$randomRed}, {$randomGreen}, {$randomBlue});
+
+
+    square.style.backgroundColor = randomColor;
 });
 square.addEventListener ('mouseout', () => {
 square.style.backgroundColor = '';
 });
 });
 }
+
