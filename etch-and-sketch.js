@@ -47,7 +47,7 @@ square.addEventListener ('mouseover', () => {
     let randomRed = Math.floor (Math.random() * 256);
     let randomGreen =Math.floor (Math.random() * 256);
     let randomBlue = Math.floor (Math.random() * 256);
-randomColor = rgb({$randomRed}, {$randomGreen}, {$randomBlue});
+randomColor = rgb(${randomRed}, ${randomGreen}, ${randomBlue});
 
 
     square.style.backgroundColor = randomColor;
